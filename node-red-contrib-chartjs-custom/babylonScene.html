@@ -1,0 +1,25 @@
+<script type="text/javascript">
+    RED.nodes.registerType('babylonScene',{
+        category: 'Custom_Chart',
+        color: '#a6bbcf',
+        defaults: {
+            nodeName: {value:"", required: false},
+        },
+        inputs:1,
+        icon: "file.png",
+        label: function() {
+            return this.nodeName||"babylonScene";
+        }
+    });
+</script>
+
+<script type="text/html" data-template-name="babylonScene">
+    <div class="form-row">
+        <label for="node-input-nodeName"><i class="fa fa-tag"></i> Node_Name</label>
+        <input type="text" id="node-input-nodeName" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/html" data-help-name="babylonScene">
+    <p>babylonScene</p>
+</script>

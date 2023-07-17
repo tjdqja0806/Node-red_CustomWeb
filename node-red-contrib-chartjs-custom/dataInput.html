@@ -1,0 +1,58 @@
+<script type="text/javascript">
+    RED.nodes.registerType('dataInput',{
+        category: 'Custom_Chart',
+        color: '#a6bbcf',
+        defaults: {
+            symbolName: {valuw:"", required: true}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "file.png",
+        label: function() {
+            return this.symbolName||"dataInput";
+        }
+    });
+</script>
+
+<script type="text/html" data-template-name="dataInput">
+    <div class="form-row">
+        <label for="node-input-symbolName"><i class="icon-tag"></i> SymbolName</label>
+        <!-- This logic was intented to enable for further sophisticated transformation pattern, that require futher different params as of now will use only simple logic !-->
+        <select type="text" id="node-input-symbolName"
+            onchange='(function(){  
+            var nodeInput = document.getElementById("node-input-symbolName");
+            })'>
+        <datalist id="tagName">
+            <option value = "2811-UNITSTATUS.C">2811-UNITSTATUS.C</option>
+            <option value = "2811-PCV.C">2811-PCV.C</option>
+            <option value = "2811-CM-PT0350X">2811-CM-PT0350X</option>
+            <option value = "2811-CM-TI0031">2811-CM-TI0031</option>
+            <option value = "2811-PWRRX.C">2811-PWRRX.C</option>
+            <option value = "2811-WR-0001N01">2811-WR-0001N01</option>
+            <option value = "2811-BURNUP_C.CM">2811-BURNUP_C.CM</option>
+            <option value = "2811-CAPRATE.CM">2811-CAPRATE.CM</option>
+            <option value = "2811-RC-RRSTAVGA">2811-RC-RRSTAVGA</option>
+            <option value = "2811-RC-PPCS-CSV-OUT">2811-RC-PPCS-CSV-OUT</option>
+            <option value = "2811-RC-LI0110A02">2811-RC-LI0110A02</option>
+            <option value = "2811-PWRGEN.C">2811-PWRGEN.C</option>
+            <option value = "2811-MP-EI001N01">2811-MP-EI001N01</option>
+            <option value = "2811-MP-EI001N02">2811-MP-EI001N02</option>
+            <option value = "2811-MP-EI001N03">2811-MP-EI001N03</option>
+            <option value = "2811-MP-SI0001">2811-MP-SI0001</option>
+            <option value = "2811-TM-TNH_RPM">2811-TM-TNH_RPM</option>
+            <option value = "2811-MS-2-PT1024-TXS">2811-MS-2-PT1024-TXS</option>
+            <option value = "2811-MS-2-PT1027-TXS">2811-MS-2-PT1027-TXS</option>
+            <option value = "2811-FW-LT1111XA">2811-FW-LT1111XA</option>
+            <option value = "2811-FW-LT1121XA">2811-FW-LT1121XA</option>
+            <option value = "2811-MS-PT1013A01">2811-MS-PT1013A01</option>
+            <option value = "2811-MS-PT1023A01">2811-MS-PT1023A01</option>
+            <option value = "2811-CD-PT0355">2811-CD-PT0355</option>
+            <option value = "2811-CX-CDPXPETA">2811-CX-CDPXPETA</option>
+        </datalist>
+        </select>
+    </div>
+</script>
+
+<script type="text/html" data-help-name="dataInput">
+    <p>Create Bar Chart Node</p>
+</script>

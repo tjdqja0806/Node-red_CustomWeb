@@ -1,0 +1,26 @@
+<script type="text/javascript">
+    RED.nodes.registerType("context_Initialization",{
+        category: 'Custom_Chart',
+        color: '#a6bbcf',
+        defaults: {
+            nodeName: {value:"", required: false},
+        },
+        inputs:1,
+        outputs:1,
+        icon: "file.png",
+        label: function() {
+            return this.nodeName||"context_Initialization";
+        }
+    });
+</script>
+
+<script type="text/html" data-template-name="babylonScene_2">
+    <div class="form-row">
+        <label for="node-input-nodeName"><i class="fa fa-tag"></i> Node_Name</label>
+        <input type="text" id="node-input-nodeName" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/html" data-help-name="context_Initialization">
+    <p>context_Initialization</p>
+</script>

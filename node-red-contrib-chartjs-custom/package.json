@@ -1,0 +1,22 @@
+{
+    "name": "node-red-contrib-chartjs-custom",
+    "version": "0.0.1",
+    "description": "Node-RED Chart.js Custom Node",
+    "node-red": {
+        "nodes": {
+            "barChart": "barChart.js",
+            "pieChart": "pieChart.js",
+            "dataInput": "dataInput.js",
+            "babylonScene" : "babylonScene.js",
+            "radarChart" : "radarChart.js",
+            "polarChart" : "polarChart.js",
+            "lineChart" : "lineChart.js",
+            "doughnutChart" : "doughnutChart.js",
+            "context_Initialization" : "context_Initialization.js"
+        }
+    },
+    "dependencies": {
+        "express": "^4.17.3",
+        "fs": "^0.0.1-security"
+    }
+}

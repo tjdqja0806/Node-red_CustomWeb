@@ -1,0 +1,30 @@
+[
+    {"symbolname" : [
+        "2811-UNITSTATUS.C",
+        "2811-PCV.C",
+        "2811-CM-PT0350X",
+        "2811-CM-TI0031",
+        "2811-PWRRX.C",
+        "2811-WR-0001N01",
+        "2811-BURNUP_C.CM",
+        "2811-CAPRATE.CM",
+        "2811-RC-RRSTAVGA",
+        "2811-RC-PPCS-CSV-OUT",
+        "2811-RC-LI0110A02",
+        "2811-PWRGEN.C",
+        "2811-MP-EI001N01",
+        "2811-MP-EI001N02",
+        "2811-MP-EI001N03",
+        "2811-MP-SI0001",
+        "2811-TM-TNH_RPM",
+        "2811-MS-2-PT1024-TXS",
+        "2811-MS-2-PT1027-TXS",
+        "2811-FW-LT1111XA",
+        "2811-FW-LT1121XA",
+        "2811-MS-PT1013A01",
+        "2811-MS-PT1023A01",
+        "2811-CD-PT0355",
+        "2811-CX-CDPXPETA"
+        ]
+    }
+]
